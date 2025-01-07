@@ -143,7 +143,7 @@ header {
 
 .main-content {
     flex: 1;
-    margin-top: var(--header-height);
+    margin-top: calc(var(--header-height) + 3rem);
     padding: var(--spacing-lg) var(--spacing-sm);
     max-width: var(--max-width);
     margin-left: auto;
@@ -280,3 +280,4 @@ header {
         transform: translateX(-50%);
     }
 }
+
