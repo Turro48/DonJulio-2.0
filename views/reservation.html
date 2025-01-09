@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Reservation - Don Julio Cevichería</title>
+   <link rel="stylesheet" href="../css/style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&family=Sriracha&display=swap"
+      rel="stylesheet">
+</head>
+
+<body>
+   <div id="header-container"></div>
+   <main class="main-content">
+      <div class="container">
+         <h2 class="section-title">¡Reserva aquí!</h2>
+         <div class="reservation-container">
+            <div class="social-login">
+               <button class="social-brn facebook">Continuar con Facebook</button>
+               <button class="social-brn Google">Continuar con Google</button>
+            </div>
+            <div class="separator">
+               <span>o</span>
+            </div>
+            <form class="reservation-form">
+               <div class="form-group">
+                  <label for="name">Nombre completo</label>
+                  <input type="text" id="name" name="name" placeholder="Ingresa tu nombre" required>
+               </div>
+               <div class="form-group">
+                  <label for="phone">Número de telefono</label>
+                  <input type="tel" id="phone" name="phone" placeholder="Ingresa tu número" required>
+               </div>
+               <div class="form-group">
+                  <label for="email">ingrese correo electronico</label>
+                  <input type="email" id="email" name="email" placeholder="Ingresa tu correo" required>
+               </div>
+               <div class="form-group">
+                  <label for="date">Fecha de reserva</label>
+                  <input type="date" id="date" name="date" required>
+               </div>
+               <div class="form-group">
+                  <label for="time">Selecciona la hora</label>
+                  <input type="time" id="time" name="time" required>
+               </div>
+               <div class="form-group">
+                  <label for="guest">Número de invitados</label>
+                  <select id="guest" name="guest" required>
+                     <option value="">Seleccionar</option>
+                     <option value="1">1 Persona</option>
+                     <option value="2">2 Personas</option>
+                     <option value="3">3 Personas</option>
+                     <option value="4">4 Personas</option>
+                     <option value="5+">5 o más personas</option>
+                  </select>
+               </div>
+               <div class="form-group">
+                  <label>Tipo de reserva</label>
+                  <div class="radio-group">
+                     <label class="radio-label">
+                        <input type="radio" name="reservation-type" value="estandar" checked>
+                        Estandar
+                     </label>
+                     <label class="radio-label">
+                        <input type="radio" name="reservation-type" value="celebration">
+                        Celebración
+                     </label>
+                     <label class="radio-label">
+                        <input type="radio" name="reservation-type" value="business">
+                        Negocios
+                     </label>
+                  </div>
+                  <div class="form-group">
+                     <label for="comments">Comentarios adicionales</label>
+                     <textarea id="comments" name="comments" placeholder="¿Hay algo más que debamos saber?"
+                        rows="5"></textarea>
+                  </div>
+                  <div class="form-button">
+                     <button type="submit" class="btn-primary">Reservar</button>
+                     <button type="reset" class="btn-secondary">Restaurar</button>
+                  </div>
+               </div>
+            </form>
+         </div>
+      </div>
+   </main>
+   <div id="footer-container">
+   </div>
+   <script src="../js/script.js"></script>
+</body>
+
+</html>
