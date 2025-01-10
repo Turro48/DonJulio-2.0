@@ -20,8 +20,8 @@
          <h2 class="section-title">¡Reserva aquí!</h2>
          <div class="reservation-container">
             <div class="social-login">
-               <button class="social-brn facebook">Continuar con Facebook</button>
-               <button class="social-brn Google">Continuar con Google</button>
+               <button class="social-btn Facebook">Continuar con Facebook</button>
+               <button class="social-btn Google">Continuar con Google</button>
             </div>
             <div class="separator">
                <span>o</span>
@@ -39,26 +39,28 @@
                   <label for="email">ingrese correo electronico</label>
                   <input type="email" id="email" name="email" placeholder="Ingresa tu correo" required>
                </div>
-               <div class="form-group">
-                  <label for="date">Fecha de reserva</label>
-                  <input type="date" id="date" name="date" required>
+               <div class="form-row">
+                  <div class="form-group">
+                     <label for="date">Fecha de reserva</label>
+                     <input type="date" id="date" name="date" required>
+                  </div>
+                  <div class="form-group">
+                     <label for="time">Selecciona la hora</label>
+                     <input type="time" id="time" name="time" required>
+                  </div>
+                  <div class="form-group">
+                     <label for="guest">Número de invitados</label>
+                     <select id="guest" name="guest" required>
+                        <option value="">Seleccionar</option>
+                        <option value="1">1 Persona</option>
+                        <option value="2">2 Personas</option>
+                        <option value="3">3 Personas</option>
+                        <option value="4">4 Personas</option>
+                        <option value="5+">5 o más personas</option>
+                     </select>
+                  </div>
                </div>
-               <div class="form-group">
-                  <label for="time">Selecciona la hora</label>
-                  <input type="time" id="time" name="time" required>
-               </div>
-               <div class="form-group">
-                  <label for="guest">Número de invitados</label>
-                  <select id="guest" name="guest" required>
-                     <option value="">Seleccionar</option>
-                     <option value="1">1 Persona</option>
-                     <option value="2">2 Personas</option>
-                     <option value="3">3 Personas</option>
-                     <option value="4">4 Personas</option>
-                     <option value="5+">5 o más personas</option>
-                  </select>
-               </div>
-               <div class="form-group">
+               <div class="form-group reservation-type">
                   <label>Tipo de reserva</label>
                   <div class="radio-group">
                      <label class="radio-label">

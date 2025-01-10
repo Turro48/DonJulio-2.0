@@ -6,24 +6,26 @@
     --text-dark: #333;
     --background-light: #f8f9fa;
     --border-color: rgba(255, 255, 255, 0.1);
-    
+
     --header-height: 80px;
     --max-width: 1200px;
     --border-radius-lg: 25px;
     --border-radius-sm: 8px;
-    
+
     --transition: all 0.3s ease;
-    --shadow-sm: 0 2px 4px rgba(0,0,0,0.1);
-    --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
-    --shadow-lg: 0 10px 15px rgba(0,0,0,0.1);
-    
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+
     --spacing-xs: 0.5rem;
     --spacing-sm: 1rem;
     --spacing-md: 1.5rem;
     --spacing-lg: 2rem;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -97,7 +99,7 @@ header {
     font-family: 'Brush Script MT', cursive;
     font-style: italic;
     white-space: nowrap;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .menu {
@@ -156,7 +158,7 @@ header {
     color: var(--text-color);
     padding: var(--spacing-lg) 0;
     margin-top: auto;
-    box-shadow: 0 -4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .footer-container {
@@ -214,7 +216,7 @@ header {
     :root {
         --header-height: 70px;
     }
-    
+
     .brand-name h1 {
         font-size: 2rem;
     }
@@ -281,3 +283,192 @@ header {
     }
 }
 
+.information-content {
+    padding: 1rem;
+}
+
+/*reservation for styles*/
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.reservation-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: var(--spacing-lg);
+    background-color: white;
+    border-radius: var(--border-radius-sm);
+    box-shadow: var(--shadow-md);
+}
+
+.social-login {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
+}
+
+.social-btn {
+    padding: var(--spacing-sm);
+    border: none;
+    border-radius: var(--border-radius-sm);
+    font-weight: bold;
+    cursor: pointer;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-lg);
+}
+
+.social-btn.Facebook {
+    background-color: #1877f2;
+    color: white;
+}
+
+.social-btn.Google {
+    background-color: white;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+.separator {
+    text-align: center;
+    position: relative;
+    margin: var(--spacing-md) 0;
+}
+
+.separator::before,
+.separator::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 45%;
+    height: 1px;
+    background-color: #ddd;
+}
+
+.separator::before{
+    left: 0;
+}
+
+.separator::after{
+    right: 0;
+}
+
+.form-group {
+    margin-bottom: var(--spacing-md);
+}
+
+.form-group label{
+    display: block;
+    margin-bottom: var(--spacing-xs);
+    color: var(--text-dark);
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: var(--spacing-sm);
+    border-radius: var(--border-radius-sm);
+    font-size: 1rem;
+    border: 1px solid #ddd;
+
+}
+
+.form-row{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+}
+
+.form-row .form-group{
+    margin-bottom: 0; 
+}
+
+.form-row .form-group input,
+.form-row .form-group select {
+    width: 100%;
+    height: 42px;
+}
+
+.reservation-type{
+    text-align: center;
+    margin: var(--spacing-lg) 0;
+}
+
+.reservation-type label{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: var(--spacing-md);
+    display: block;
+}
+
+.radio-group{
+    display: flex;
+    gap: var(--spacing-md);
+    justify-content: center;
+}
+
+.form-group label{
+    display: block;
+    margin-bottom: var(--spacing-xs);
+    color: var(--text-dark);
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.reservation-type label{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin: var(--spacing-md);
+    display: block;
+}
+
+.radio-label {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    font-size: 1rem;
+    color: var(--text-dark);
+    cursor: pointer;
+}
+
+.form-button{
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-lg);
+}
+
+.btn-primary, .btn-secondary {
+    padding: var(--spacing-sm) var(--spacing-md); 
+    border: none;
+    border-radius: var(--border-radius-sm);
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.btn-secondary {
+    background-color: #f5f5f5;
+    color: var(--text-dark);
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
