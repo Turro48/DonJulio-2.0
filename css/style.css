@@ -283,9 +283,16 @@ header {
     }
 }
 
-.information-content {
-    padding: 1rem;
+/*information styles*/
+
+.information-container {
+background-color: white;
+padding: var(--spacing-xs);
+border-radius: var(--border-radius-sm);
+box-shadow: var(--shadow-md);
 }
+
+
 
 /*reservation for styles*/
 
