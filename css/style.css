@@ -403,35 +403,15 @@ header {
     margin: var(--spacing-lg) 0;
 }
 
-.reservation-type label{
-    font-size: 1.8rem;
-    font-weight: 600;
-    color: var(--text-dark);
-    margin-bottom: var(--spacing-md);
-    display: block;
+.form-title{
+font-size: 1.5rem;
 }
-
 .radio-group{
     display: flex;
     gap: var(--spacing-md);
     justify-content: center;
 }
 
-.form-group label{
-    display: block;
-    margin-bottom: var(--spacing-xs);
-    color: var(--text-dark);
-    font-weight: 500;
-    font-size: 0.9rem;
-}
-
-.reservation-type label{
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: var(--text-dark);
-    margin: var(--spacing-md);
-    display: block;
-}
 
 .radio-label {
     display: flex;
